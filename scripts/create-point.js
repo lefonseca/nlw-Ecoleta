@@ -21,19 +21,59 @@ function carregarCidade(event) {
     const indexOfSelectedState = event.target.selectedIndex;
     stateInput.value = event.target.options[indexOfSelectedState].text;
 
-    const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/distritos`
+    const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/distritos`;
+
+    citySelect.innerHTML = "<option value>Selecione uma cidade...</option>";
+    citySelect.disabled = true;
 
     fetch(url)
         .then( res => res.json())
         .then(cities => {
             for (const city of cities){
-                citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`;
-        }
-        
-        citySelect.disabled = false;
+                citySelect.innerHTML += `<option value="${city.nome}">${city.nome}</option>`;
+            }
+            citySelect.disabled = false;
     })
 }
 
 document
     .querySelector("select[name=uf]")
-    .addEventListener("change", carregarCidade)
+    .addEventListener("change", carregarCidade);
+
+
+// Itens de coleta
+// Pegar todos os itens de coleta li's
+const itemsToCollect = document.querySelectorAll(".items-grid li");
+
+for (const item of itemsToCollect) {
+    item.addEventListener("click", handleSelectedItem);
+}
+
+const collecteditems = document.querySelector("input[name=items]");
+let selectedItems = [];
+
+function handleSelectedItem(event) {
+    const itemLi = event.target;
+    const itemId = itemLi.dataset.id;
+
+    itemLi.classList.toggle("selected");
+
+    // Será adicionado a posição do array nessa const
+    const alreadySelected = selectedItems.findIndex( item => item == itemId);
+
+    // Se o item já estiver selecionado
+    if (alreadySelected >= 0) {
+        // Remover a selação dos itens
+        const filterSelected = selectedItems.filter( item => {
+            const itemIsDifferent = item != itemId;
+            return itemIsDifferent;
+        })
+
+        selectedItems = filterSelected;
+    } else {
+        // Se não estiver selecionado deverá ser adicionado a seleção
+        selectedItems.push(itemId);
+    }
+
+    collecteditems.value = selectedItems;
+}
