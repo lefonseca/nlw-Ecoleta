@@ -2,6 +2,7 @@
     --title-color:#322153; 
     --primary-color: #34CB79;
     --primary-color-hover: #2FB86e;
+    --bg-field: #f0f0f5;
 }
 
 * {
@@ -26,4 +27,8 @@ a {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
     color: var(--title-color);
+}
+
+li {
+    list-style: none;
 }
