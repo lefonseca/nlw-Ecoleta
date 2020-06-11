@@ -9,7 +9,7 @@
 ### Descrição do projeto
 ---
 <p align="justify">
-  <strong>Projeto ECOLETA</strong> - esse é um *projeto de estudos* e foi criado para organizar, cadastrar e visibilizar pontos de coleta onde as pessoas possam procurar esses pontos de coleta e com mais facilidade localiza-los para a melhorar do sistema de reciclagem
+  <strong>Projeto ECOLETA</strong> - esse é um **projeto de estudos** e foi criado para organizar, cadastrar e visibilizar pontos de coleta onde as pessoas possam procurar esses pontos de coleta e com mais facilidade localiza-los para a melhorar do sistema de reciclagem
 </p>
 
 <div align="center">
