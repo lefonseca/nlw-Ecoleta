@@ -12,25 +12,19 @@
   <strong>Projeto ECOLETA</strong> - esse é um *projeto de estudos* e foi criado para organizar, cadastrar e visibilizar pontos de coleta onde as pessoas possam procurar esses pontos de coleta e com mais facilidade localiza-los para a melhorar do sistema de reciclagem
 </p>
 
-### :trophy: Tecnológias & Frameworks usados
----
-- **Linguagens:** html, javascript, css
-- **Frameworks:** nodeJS, express, SQL
-
-### Funcionalidades
----
+<div align="center">
+  
 :heavy_check_mark: Home do Ecoleta <br>
+<img width="700" src="docs/01-Home.png" alt="Home">
+
 :heavy_check_mark: Cadastro de novos pontos de Coleta <br>
+<img width="700" src="docs/02-Cadastros.png" alt="Home">
+
 :heavy_check_mark: Busca dos pontos de Coleta <br>
+<img width="700" src="docs/03-Search.png" alt="Home"> <br><br>
+<img width="700" src="docs/04-Result.png" alt="Home">
 
-### :dash: Layout ou Deploy da Aplicação
----
-Se ainda não houver deploy, insira capturas de tela da aplicação ou gifs
-
-### Pré-requisitos
----
-
-- To Do: Listar todas as dependencias e libs que o usuário deve ter instalado na máquina antes de rodar a aplicação 
+</div>
 
 ### :arrow_forward: Como rodar a aplicação 
 ---
@@ -43,14 +37,11 @@ git clone https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator
 - To Do: Coloque um passo a passo para rodar a sua aplicação.  <br>
 **Dica: clone o próprio projeto e verfique se o passo a passo funciona**
 
-### :books: Linguagens, dependencias e libs utilizadas
+### :trophy: Tecnológias & Frameworks usados
 ---
-- [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
-- [React PDF](https://react-pdf.org/)
+- **Linguagens:** html, javascript, css
+- **Frameworks:** nodeJS, express, SQL
 
-...
-
-Liste as tecnologias utilizadas no projeto que **não** forem reconhecidas pelo Github 
 
 ### :octocat: Team
 ---
