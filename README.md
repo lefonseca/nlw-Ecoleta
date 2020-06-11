@@ -29,13 +29,21 @@
 ### :arrow_forward: Como rodar a aplicação 
 ---
 No terminal, clone o projeto: 
-
 ```
-git clone https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator
+git clone https://github.com/lefonseca/nlw-Ecoleta
 ```
-
-- To Do: Coloque um passo a passo para rodar a sua aplicação.  <br>
-**Dica: clone o próprio projeto e verfique se o passo a passo funciona**
+Inicie o servidor 
+```
+npm start
+```
+A aplicação cria um servidor local utilizando a porta 3000, é possivel configar outra porta através do arquivo **server.js** na linha abaixo:
+```
+server.listen(3000);
+```
+No browser (da sua escolha), estou usando o Chrome informe o endereço abaixo, caso tenha mantido a porta a cima:
+```
+http://localhost:3000/
+```
 
 ### :trophy: Tecnológias & Frameworks usados
 ---
