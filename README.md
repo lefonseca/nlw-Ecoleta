@@ -47,8 +47,23 @@ http://localhost:3000/
 
 ### :trophy: Tecnológias & Frameworks usados
 ---
-- **Linguagens:** html, javascript, css
-- **Frameworks:** nodeJS, express, SQL
+#### Front-end
+- [Nunjucks](https://mozilla.github.io/nunjucks/)
+- [HTML 5](http://www.w3.org/TR/html5/)
+- [CSS 3](https://www.w3schools.com/Css/)
+- [JavaScript](https://www.javascript.com/)
+
+#### Back-end
+- [NodeJS](https://nodejs.org/)
+    - [Express](https://expressjs.com/)
+    - [Nodemon](https://nodemon.io/)
+
+#### Banco de dados
+- [SQLite3](https://www.sqlite.org/)
+- [DB Browser for SQLite](https://sqlitebrowser.org/)
+
+#### APIs
+- [IBGE](https://servicodados.ibge.gov.br/api/docs/localidades?versao=1)
 
 
 ### :octocat: Team
