@@ -1,4 +1,5 @@
 ![logo](https://github.com/lefonseca/nlw-Ecoleta/blob/master/public/assets/logo.svg)
+---
 #### NEXT LEVEL WEEK #1
 <p align="left">
   <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
@@ -75,5 +76,5 @@ http://localhost:3000/
 
 ### Licença 
 --- 
-The [MIT License]() (MIT)<br>
-Copyright :copyright: 2020 - Ecoleta
+The [MIT License](https://github.com/lefonseca/nlw-Ecoleta/blob/master/LICENSE) (MIT)<br>
+Copyright :copyright: 2020 - Leandro Fonseca
