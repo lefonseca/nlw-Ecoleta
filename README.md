@@ -14,13 +14,13 @@
 
 <div align="center">
   
-:heavy_check_mark: Home do Ecoleta <br>
+:heavy_check_mark: Home do Ecoleta <br><br>
 <img width="700" src="docs/01-Home.png" alt="Home">
 
-:heavy_check_mark: Cadastro de novos pontos de Coleta <br>
+:heavy_check_mark: Cadastro de novos pontos de Coleta <br><br>
 <img width="700" src="docs/02-Cadastros.png" alt="Home">
 
-:heavy_check_mark: Busca dos pontos de Coleta <br>
+:heavy_check_mark: Busca dos pontos de Coleta <br><br>
 <img width="700" src="docs/03-Search.png" alt="Home"> <br><br>
 <img width="700" src="docs/04-Result.png" alt="Home">
 
