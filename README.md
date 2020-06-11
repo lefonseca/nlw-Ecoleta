@@ -6,12 +6,11 @@
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
-
-## Descrição do projeto 
+### Descrição do projeto
+---
 <p align="justify">
   <strong>Projeto ECOLETA</strong> - esse é um *projeto de estudos* e foi criado para organizar, cadastrar e visibilizar pontos de coleta onde as pessoas possam procurar esses pontos de coleta e com mais facilidade localiza-los para a melhorar do sistema de reciclagem
 </p>
-
 
 ### :trophy: Tecnológias & Frameworks usados
 ---
@@ -20,11 +19,9 @@
 
 ### Funcionalidades
 ---
-:heavy_check_mark: Home do Ecoleta  
-
-:heavy_check_mark: Cadastro de novos pontos de Coleta 
-
-:heavy_check_mark: Busca dos pontos de Coleta
+:heavy_check_mark: Home do Ecoleta <br>
+:heavy_check_mark: Cadastro de novos pontos de Coleta <br>
+:heavy_check_mark: Busca dos pontos de Coleta <br>
 
 ### :dash: Layout ou Deploy da Aplicação
 ---
@@ -32,6 +29,7 @@ Se ainda não houver deploy, insira capturas de tela da aplicação ou gifs
 
 ### Pré-requisitos
 ---
+
 - To Do: Listar todas as dependencias e libs que o usuário deve ter instalado na máquina antes de rodar a aplicação 
 
 ### :arrow_forward: Como rodar a aplicação 
@@ -42,9 +40,10 @@ No terminal, clone o projeto:
 git clone https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator
 ```
 
-- To Do: Coloque um passo a passo para rodar a sua aplicação. **Dica: clone o próprio projeto e verfique se o passo a passo funciona**
+- To Do: Coloque um passo a passo para rodar a sua aplicação.  <br>
+**Dica: clone o próprio projeto e verfique se o passo a passo funciona**
 
-### Linguagens, dependencias e libs utilizadas :books:
+### :books: Linguagens, dependencias e libs utilizadas
 ---
 - [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
 - [React PDF](https://react-pdf.org/)
@@ -62,6 +61,5 @@ Liste as tecnologias utilizadas no projeto que **não** forem reconhecidas pelo 
 
 ### Licença 
 --- 
-The [MIT License]() (MIT)
-
+The [MIT License]() (MIT)<br>
 Copyright :copyright: 2020 - Ecoleta
