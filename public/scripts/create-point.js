@@ -4,9 +4,12 @@ function carregarUF(){
     fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
         .then( res => res.json())
         .then(states => {
+            
+            states.sort((a, b) => (a.nome > b.nome) ? 1 : -1)
+            
             for (const state of states){
                 ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`;
-        }
+            }
     })
 }
 
@@ -29,6 +32,9 @@ function carregarCidade(event) {
     fetch(url)
         .then( res => res.json())
         .then(cities => {
+
+            cities.sort((a, b) => (a.nome > b.nome) ? 1 : -1)
+
             for (const city of cities){
                 citySelect.innerHTML += `<option value="${city.nome}">${city.nome}</option>`;
             }

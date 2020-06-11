@@ -1,33 +1,25 @@
+// Criar Servidor
 const express = require("express");
 const server = express();
 
-// configurar pasta pubica
+// Pegar as Rotas
+const routes = require("./routes");
+
+// pegar o banco de dados
+const db = require("./database/db"); 
+
+// configurar servidor
 server.use(express.static("public"));
+server.use(routes);
+server.use(express.urlencoded({ extended: true}));
 
-
-// utilizando template engine
+// Configurar template engine (nunjucks)
 const nunjucks = require("nunjucks");
+
 nunjucks.configure("src/views", {
     express: server,
-    noCache: true
-})
-
-// configurar caminhos da minha aplicação
-// página inicial
-// req: Requisição
-// res: Resposta
-server.get("/", (req, res) => {
-    return res.render("index.html", {
-        title: "Seu marketplace de coleta de resíduos"
-    });
-})
-
-server.get("/create-point", (req, res) => {
-    return res.render("create-point.html");
-})
-
-server.get("/search", (req, res) => {
-    return res.render("search-results.html");
+    noCache: true,
+    watch: true
 })
 
 

@@ -1,0 +1,27 @@
+<section id="modal" class="point">
+    <div class="content">
+        <img src="/assets/check.svg" alt="Cadastro concluído!">
+        <h1>Cadastro concluído!</h1>
+    </div>
+</section>
+
+<script>
+    const modalTitle = document.querySelector("#modal h1");
+    const currentLocal = window.location.pathname;
+
+    if(currentLocal == "/delete"){
+        modalTitle.textContent = "Local Deletado";
+
+        setTimeout(() => {
+            window.location = "/search?search="
+        }, 2000);
+    }
+
+    if (currentLocal == "/edited") {
+        modalTitle.textContent = "Local editado com sucesso"
+    }
+
+    setTimeout(() => { 
+        window.location = "/"
+    }, 2000);
+</script>

@@ -13,11 +13,39 @@
     {% include "partials/page-header.html" %}
 
     <main>
-        <h4>
-            <strong>2 pontos</strong>
-            encontrados
-        </h4>
-        <div class="cards">
+
+        {% if total > 0 %}
+            <h4>
+
+            {% if total == 1 %}
+                <strong>{{total}} ponto</strong> encontrado
+            {% else %}
+                <strong>{{total}} pontos</strong> encontrados
+            {% endif %}
+
+            </h4>
+            <div class="cards">
+
+            {% for place in places %}
+                <div class="card">
+                    <img src="{{ place.imagem }}" alt="{{ place.name }}">
+                    <h1>{{ place.name }}</h1>
+                    <h3>{{ place.items }}</h3>
+                    <p>
+                        {{ place.city }}, {{ place.state }}
+                        <br/>
+                        {{ place.address }}
+                        <br/>
+                        {{ place.address2 }}
+                    </p>
+                </div>
+            {% endfor%}
+            </div>
+        {%else%}
+            <h4><strong>Nenhum</strong> local encontrado!</h4>
+
+        {% endif %}    
+            {# 
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Colectoria">
                 <h1>Colectoria</h1>
@@ -30,6 +58,7 @@
                     Nº 260
                 </p>
             </div>
+
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1563477710521-5ae0aa5085ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Papersider">
                 <h1>Papersider</h1>
@@ -41,7 +70,7 @@
                     <br/>
                     Nº 260
                 </p>
-            </div>
+            </div> #}
         </div>
     </main>
 {% endblock content %}

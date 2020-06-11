@@ -1,0 +1,35 @@
+<section id="modal" class="err">
+    <div class="content">
+        <img src="/assets/register_err.svg" alt="Erro">
+        <h1>Erro no Cadastro!</h1>        
+    </div>
+</section>
+
+
+<script>
+    setTimeout( () => {
+        window.location = "/create-point"
+    }, 2000)
+</script>
+
+{# <section id="modal" class="point">
+    <div class="content">
+        <img src="/assets/register_err.svg" alt="Erro no cadastro">
+        <h1>Erro no cadastro</h1>
+    </div>
+</section>
+
+<script>
+    const modalTitle = document.querySelector("#modal h1")
+    if (window.location.pathname == "/delete") {
+       modalTitle.textContent = "Falha ao Deletar"
+
+       setTimeout(() => {
+            window.location = "/"
+       }, 2000)
+    } else {
+        setTimeout(() => {
+            window.location = "/create"
+        }, 2000) 
+    }
+</script> #}
